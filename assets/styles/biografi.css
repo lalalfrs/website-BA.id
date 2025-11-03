@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f7f6;
+  color: #2c2c2c;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 35px 90px;
+}
+
+.logo {
+  border-radius: 25px;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-content {
+  width: 100%;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #36454f;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1a1a1a;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: #f9f7f6;
+  overflow: hidden;
+}
+
+.hero-text {
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  z-index: 2;
+}
+
+.hero-text .nama {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #36454f;
+  margin-bottom: 5px;
+}
+
+.hero-text .judul {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #a8998c;
+  line-height: 1.1;
+}
+
+.hero-image {
+  position: absolute;
+  right: 2%;
+  top: 32%;
+  width: 600px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.bio-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 12%;
+}
+
+.bio-text {
+  flex: 1;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 15px;
+  max-width: 600px;
+}
+
+.bio-text p:first-letter {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  color: #555;
+}
+
+.bio-image {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.bio-image h2 {
+  font-size: 26px;
+  font-weight: 200;
+  color: #444;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.bio-image img {
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.timeline-text {
+  z-index: 2;
+}
+
+.timeline-text .nama {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #36454f;
+  margin-bottom: 5px;
+}
+
+.timeline-text .judul {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #a8998c;
+  line-height: 1.1;
+}
+
+.bio-timeline {
+  margin-top: 70px;
+  max-width: 100%;
+  align-items: center;
+}
+
+.deskripsi {
+  padding: 130px 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+.deskripsi-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.deskripsi h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-bottom: 25px;
+}
+
+.deskripsi p:first-letter {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.deskripsi hr {
+  width: 40%;
+  margin: 50px auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.footer-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.footer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+.footer {
+  background-color: #f4f1ef;
+  color: #333;
+  padding: 50px 80px 20px 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  color: #b39788;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #b39788;
+}
+
+.footer-logo {
+  width: 50px;
+  height: 50px;
+  background-color: #b39788;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  mix-blend-mode: multiply;
+}
+
+.footer-column.contact p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  color: #b39788;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  color: #8c7466;
+  transform: scale(1.1);
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 1.5px solid #b39788;
+  color: #b39788;
+  padding: 8px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  margin-bottom: 10px;
+}
+
+.contact-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-btn:hover {
+  background-color: #b39788;
+  color: white;
+}
+
+.contact-btn:hover a {
+  color: white;
+}
+
+.footer-column.address p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.hours {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.hours strong {
+  color: #333;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .filosofi-section {
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+
+  .side-content {
+    text-align: left;
+  }
+
+  .footer-image img {
+    height: 250px;
+  }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basuki Abdullah - Maestro Romantis Indonesia</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c98c09fad0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/jpg" href="/assets/images/logo.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-white': '#f9f7f6',
+                        'romantic': '#A8998C'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navbar-container">
+                <div class="nav-content">
+                    <div class="logo"><img src="assets/images-home/logo.png" alt="" /></div>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="biografi.html" class="nav-link">Biografi</a></li>
+                        <li><a href="Karya.html" class="nav-link">Karya</a></li>
+                        <li><a href="index.html" class="nav-link">Gaya & Warisan</a></li>
+                        <li><a href="#warisan" class="nav-link">Referensi</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-40 pb-20 px-6 flex items-center justify-center" style="background-color: #f9f7f6;">
+        <div class="text-center max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-800 mb-6"
+                style="font-family: 'Playfair Display', serif;">
+                Koleksi Karya Abadi
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                Kurasi Resmi Lukisan Realistik-Romantis
+            </p>
+            <p class="text-lg text-gray-500 mb-12">
+                Karya-karya Terpilih
+            </p>
+
+            <!-- Navigation Pills -->
+            <div class="flex flex-wrap justify-center gap-4 mb-16">
+                <a href="biografi.html"
+                    class="px-6 py-3 bg-romantic text-white rounded-full hover:bg-[#8E7E71] transition-all duration-300 shadow-lg"
+                    href="#biografi">
+                    BIOGRAFI
+                </a>
+                <a href="#karya"
+                    class="px-6 py-3 bg-gray-200 text-romantic rounded-full hover:bg-romantic hover:text-white transition-all duration-300">
+                    KARYA UTAMA
+                </a>
+                <a href="#lengkap"
+                    class="px-6 py-3 bg-gray-200 text-romantic rounded-full hover:bg-romantic hover:text-white transition-all duration-300">
+                    KARYA LENGKAP
+                </a>
+                <a href="#gaya"
+                    class="px-6 py-3 bg-gray-200 text-romantic rounded-full hover:bg-romantic hover:text-white transition-all duration-300">
+                    ROMANTISME
+                </a>
+                <a href="#referensi"
+                    class="px-6 py-3 bg-gray-200 text-romantic rounded-full hover:bg-romantic hover:text-white transition-all duration-300">
+                    REFERENSI
+                </a>
+            </div>
+
+    </section>
+
+
+    <section id="karya" class="py-20 bg-slate-600">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white text-center mb-4">Karya Utama</h2>
+
+            
+            <div class="relative mb-16">
+                
+                <div id="galleryWrapper" class="flex gap-6 overflow-x-hidden scroll-smooth">
+                    <!-- Gambar 1 -->
+                    <div class="aspect-[3/4] min-w-[250px] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden relative group"
+                        data-title="Ibu & Anak" data-year="1992"
+                        data-desc="seorang ibu yang sedang menggendong anaknya...">
+                        <img src="assets/images/ibudananak.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <p class="text-white text-sm font-medium">Ibu & Anak</p>
+                            <p class="text-gray-300 text-xs">1992</p>
+                        </div>
+                    </div>
+
+                    <!-- Gambar 2 -->
+                    <div class="aspect-[3/4] min-w-[250px] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden relative group"
+                        data-title="Pangeran Diponegoro" data-year="1949" data-desc="penggambaran kegagahan Pangeran Diponegoro saat memimpin perang">
+                        <img src="assets/images/diponegoro.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <p class="text-white text-sm font-medium">Pangeran Diponegoro</p>
+                            <p class="text-gray-300 text-xs">1949</p>
+                        </div>
+                    </div>
+
+                    <!-- Gambar 3 -->
+                    <div class="aspect-[3/4] min-w-[250px] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden relative group"
+                        data-title="Pertempuran Gatotkaca & Antasena" data-year="1956"
+                        data-desc="Menggambarkan tokoh pewayangan...">
+                        <img src="assets/images/pertempuran.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <p class="text-white text-sm font-medium">Pertempuran Gatotkaca & Antasena</p>
+                            <p class="text-gray-300 text-xs">1956</p>
+                        </div>
+                    </div>
+
+                    <!-- Gambar 4 -->
+                    <div class="aspect-[3/4] min-w-[250px] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden relative group"
+                        data-title="Kakak Beradik" data-year="1978" data-desc="merupakan salah satu karyanya...">
+                        <img src="assets/images/kakakadik.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <p class="text-white text-sm font-medium">Kakak Beradik</p>
+                            <p class="text-gray-300 text-xs">1978</p>
+                        </div>
+                    </div>
+
+                    <!-- Gambar 5  -->
+                    <div class="aspect-[3/4] min-w-[250px] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden relative group"
+                        data-title="Nyi Roro Kidul" data-year="1950"
+                        data-desc="gambaran imajinasi tentang sosok Nyi Roro Kidul oleh Basuki Abdullah...">
+                        <img src="assets/images/nyirorokidul.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <p class="text-white text-sm font-medium">Nyi Roro Kidul </p>
+                            <p class="text-gray-300 text-xs">1950</p>
+                        </div>
+                    </div>
+
+                    <!-- Gambar 6  -->
+                    <div class="aspect-[3/4] min-w-[250px] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden relative group"
+                        data-title="Soekarno" data-year="1942"
+                        data-desc="lukisan potret Presiden pertama Indonesia yang digunakan sebagai perangko pada zaman nya">
+                        <img src="assets/images/soekarno.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <p class="text-white text-sm font-medium">Soekarno </p>
+                            <p class="text-gray-300 text-xs">1942</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <button id="prevBtn"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-romantic text-white p-3 rounded-full shadow-md transition-all">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+
+
+                <button id="nextBtn"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-romantic text-white p-3 rounded-full shadow-md transition-all">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    
+    <section id="lengkap" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">Karya Seni Lainnya</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <!-- Row 1 -->
+                <div
+                    class="aspect-square rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden relative group">
+                    <img src="assets/images/nyirorokidul.png" alt="[DESKRIPSI]" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <p class="text-white text-sm font-medium">Nyi Roro Kidul</p>
+                        <p class="text-gray-300 text-xs">1950</p>
+                    </div>
+                </div>
+
+                <div
+                    class="aspect-square rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden relative group">
+                    <img src="assets/images/soekarno.png" alt="[DESKRIPSI]" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <p class="text-white text-sm font-medium">Soekarno</p>
+                        <p class="text-gray-300 text-xs">1942</p>
+                    </div>
+                </div>
+                <div
+                    class="aspect-square rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden relative group">
+                    <img src="assets/images/perkelahian.png" alt="[DESKRIPSI]" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <p class="text-white text-sm font-medium">Rahwana & Jahtayu</p>
+                        <p class="text-gray-300 text-xs">1956</p>
+                    </div>
+                </div>
+                <div
+                    class="aspect-square rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden relative group">
+                    <img src="assets/images/Ferdinand.png" alt="[DESKRIPSI]" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <p class="text-white text-sm font-medium">Ferdinand Marcos</p>
+                        <p class="text-gray-300 text-xs">1975</p>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div
+                    class="aspect-square rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden relative group">
+                    <img src="assets/images/topeng.png" alt="[DESKRIPSI]" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <p class="text-white text-sm font-medium">Topeng sebagai sandiwara kehidupan</p>
+                        <p class="text-gray-300 text-xs">1980</p>
+                    </div>
+                </div>
+                <div
+                    class="aspect-square rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden relative group">
+                    <img src="assets/images/romantisme.png" alt="[DESKRIPSI]" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <p class="text-white text-sm font-medium">Perubahan kehidupan dunia</p>
+                        <p class="text-gray-300 text-xs">1970</p>
+                    </div>
+                </div>
+                <div
+                    class="aspect-square rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden relative group">
+                    <img src="assets/images/naturalis.jpg" alt="[DESKRIPSI]" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <p class="text-white text-sm font-medium">Gunung Merapi</p>
+                        <p class="text-gray-300 text-xs">1955</p>
+                    </div>
+                </div>
+                <div
+                    class="aspect-square rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden relative group">
+                    <img src="assets/images/realisme.png" alt="[DESKRIPSI]" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <p class="text-white text-sm font-medium">Penari Betawi</p>
+                        <p class="text-gray-300 text-xs">1950</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<section id="gaya" class="py-20 bg-slate-600">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-white mb-12">Gaya Lukisan</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <img src="assets/images/realisme.png" alt="Realisme" class="w-full h-48 object-cover">
+        <div class="p-4 text-center text-gray-700">
+          <p class="text-lg font-semibold">Realisme</p>
+          <p class="text-sm">Teknik melukis yang menggambarkan objek sesuai kenyataan</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <img src="assets/images/romantisme.png" alt="Romantisme" class="w-full h-48 object-cover">
+        <div class="p-4 text-center text-gray-700">
+          <p class="text-lg font-semibold">Romantisme</p>
+          <p class="text-sm">Aliran seni yang mengutamakan perasaan dan emosi</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <img src="assets/images/naturalis.jpg" alt="Naturalisme" class="w-full h-48 object-cover">
+        <div class="p-4 text-center text-gray-700">
+          <p class="text-lg font-semibold">Naturalisme</p>
+          <p class="text-sm">Gaya melukis yang meniru alam dengan detail sempurna</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section id="referensi">
+        <div class="footer-image">
+            <img src="assets/images-home/Closing.png" alt="Pemandangan karya Basuki Abdullah" />
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>Galeri</h4>
+                    <ul>
+                        <li><a href="#">Karya Ikonik</a></li>
+                        <li><a href="#">Potret</a></li>
+                        <li><a href="#">Lanskap</a></li>
+                        <li><a href="#">Karya Koleksi Museum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Informasi Lanjut</h4>
+                    <ul>
+                        <li><a
+                                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.081065423452!2d106.77909847499166!3d-6.252573693737969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14d5d8cdbf3%3A0xe8826d6cbdfe9c!2sMuseum%20Basoeki%20Abdullah!5e0!3m2!1sid!2sid!4v1735234567890!5m2!1sid!2sid">Kunjungi
+                                Museum</a></li>
+                        <li><a href="#">Kontak & Press</a></li>
+                        <li><a href="#">Referensi</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column contact">
+                    <div class="footer-logo"><img src="assets/images-home/logo.png" alt=""></div>
+                    <p>+62 852 1150 5270<br />RepvoluSix@gmail.com</p>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column address">
+                    <button class="contact-btn"><a href="contact.html">Contact Us</a></button>
+                    <p>
+                        Jl. Keuangan Raya No.19, Cilandak Bar.,<br />
+                        Kec. Cilandak, Kota Jakarta Selatan,<br />
+                        Daerah Khusus Ibukota Jakarta 12430.
+                    </p>
+                    <div class="hours">
+                        <strong>08.00–16.00 WIB</strong><br />
+                        <span>Work days</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">© 2025 Pameran Basuki Abdullah | Dikelola oleh RepvoluSix</div>
+        </footer>
+    </section>
+    
+    <div id="artModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl shadow-2xl w-11/12 max-w-4xl relative p-8 flex flex-col md:flex-row gap-8">
+            
+            <div class="flex-shrink-0 w-full md:w-1/2 flex items-center justify-center">
+                <img id="modalImage" src="" alt="Preview Karya"
+                    class="rounded-xl border-8 border-[#A8998C] shadow-md object-cover max-h-[500px]">
+            </div>
+
+            
+            <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <h2 id="modalTitle" class="text-3xl font-semibold text-gray-800 mb-1">Nama Lukisan Disini</h2>
+                <p id="modalYear" class="text-lg font-semibold text-[#A8998C] mb-4">Tahun Dilukis</p>
+                <p id="modalDesc" class="text-gray-600 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat.
+                </p>
+
+                <div class="flex justify-end mt-6 pb-4">
+                    <button id="closeModal"
+                        class="px-6 py-2 bg-gray-100 text-gray-700 rounded-xl shadow hover:bg-romantic transition-all duration-300">
+                        Kembali
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/styles/script.js"></script>
+
+</body>
+
+</html>
